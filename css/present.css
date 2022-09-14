@@ -1,0 +1,135 @@
+
+.present {
+  background-image: url("../img/section_present/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 224px;
+  padding-bottom: 120px;
+}
+
+.present__container {
+  text-align: center;
+}
+
+.present__body {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 61px;
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 35px;
+}
+
+.main__desc {
+  line-height: 31px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 90px;
+}
+
+.main__desc_small {
+  display: none;
+}
+
+.present__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #15a9cb;
+  box-shadow: 0 4px 25px rgba(21, 169, 203, 0.3);
+  border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+
+  .present {
+    padding-top: 156px;
+    padding-bottom: 70px;
+  }
+
+  .present__body {
+    max-width: 770px;
+  }
+
+  .main__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 27px;
+  }
+
+  .main__desc {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 61px;
+  }
+
+  .present__link {
+    width: 202px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .present {
+    background-position: left 15% center;
+  }
+
+  .present__body {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+
+  .main__title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .main__desc {
+    display: none;
+  }
+
+  .main__desc_small {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .present {
+    padding: 110px 0 65px;
+  }
+
+  .present__body {
+    max-width: 290px;
+  }
+
+  .main__title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 23px;
+  }
+
+  .main__desc_small {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 54px;
+  }
+
+  .present__link {
+    width: 160px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+

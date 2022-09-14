@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- библиотека jQuery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- slider Slick -->
+  <script defer src="js/slick.min.js"></script>
+  <!-- Файл скриптов -->
+  <script defer src="js/script.js"></script>
+
+  <title>Adaptive</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__container container">
+
+      <a class="logo"><img class="logo__img" src="img/header/logo.svg" alt="Logo"></a>
+
+      <div class="contact-link">
+        <a class="contact-link__phone" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+        <a class="contact-link__text" href="tel:+79625561234">Перезвоните мне</a>
+      </div>
+
+      <a class="contact-phone" href="#"><img class="contact-phone__img" src="img/header/phone.svg" alt="Контактный телефон"></a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="present">
+      <div class="present__container container">
+
+        <div class="present__body">
+          <h1 class="main__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+          <p class="main__desc">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
+          <p class="main__desc main__desc_small">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более.</p>
+          <a class="present__link" href="#benefits">Подробнее</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="benefits__container container">
+        <h2 class="benefits__title">Уникальный заголовок для преимущества компании</h2>
+
+          <article class="benefits__about about">
+            <h3 class="about__title">О нас</h3>
+            <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
+          </article>
+
+        <ul class="benefits__row">
+          <li class="benefits-column">
+            <p class="benefits-column__number">1</p>
+            <p class="benefits-column__text">Первое целевое преимущество</p>
+          </li>
+
+          <li class="benefits-column">
+            <p class="benefits-column__number">2</p>
+            <p class="benefits-column__text">Второе целевое преимущество</p>
+          </li>
+
+          <li class="benefits-column">
+            <p class="benefits-column__number">3</p>
+            <p class="benefits-column__text">Третье целевое преимущество</p>
+          </li>
+
+          <li class="benefits-column">
+            <p class="benefits-column__number">4</p>
+            <p class="benefits-column__text">Четвертое целевое преимущество</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="callback__container container">
+        <h2 class="callback__title">Остались вопросы?</h2>
+        <p class="callback__subtitle">Оставьте номер телефона, и мы перезвоним вам</p>
+
+        <form class="form" method="post">
+
+          <fieldset class="form__data">
+            <div>
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input class="form__input" type="text" name="username" id="name"
+                     placeholder="Ваше имя"
+                     tabindex="1">
+            </div>
+
+            <div>
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="form__input" type="tel" name="phone" id="phone"
+                     placeholder="Телефон"
+                     pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                     title="+7-___-___-__-__"
+                     required
+                     tabindex="2">
+            </div>
+
+            <div>
+              <label class="visually-hidden" for="mail" lang="en">E-mail</label>
+              <input class="form__input" type="email" name="mail" id="mail"
+                     placeholder="E-mail"
+                     pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+                     tabindex="3">
+            </div>
+
+          </fieldset>
+          <button class="form__btn" type="submit" formaction="#" formtarget="_blank" tabindex="5">позвоните мне</button>
+
+          <div class="agreement">
+            <p class="agreement__text">Я даю своё</p>
+            <label class="agreement__label">
+              <input class="agreement__checkbox" type="checkbox" name="agree" value="yes" required tabindex="4">
+              <span class="agreement__check">согласие</span>
+            </label>
+            <p class="agreement__text">на обработку моих персональных <span class="agreement__text-wrap">данных.</span></p>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__container container">
+
+        <div class="footer__block">
+          <a class="logo"><img class="logo__img" src="img/header/logo.svg" alt="Logo"></a>
+          <small class="footer__copyright">&copy;&nbsp;2022 XXXcompany. Все права защищены.</small>
+        </div>
+
+        <p class="footer__author footer__author_none">Сделано <cite>Ивановым Иваном</cite></p>
+
+        <div class="contact-link">
+          <a class="contact-link__phone" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+          <a class="contact-link__text" href="tel:+79625561234">Перезвоните мне</a>
+        </div>
+
+        <a class="contact-phone" href="#"><img class="contact-phone__img" src="img/header/phone.svg" alt="Контактный телефон"></a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__author">Сделано <cite>Ивановым Иваном</cite></p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
