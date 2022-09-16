@@ -18,13 +18,14 @@
 }
 
 .footer__copyright {
-  max-width: 130px;
+  max-width: 128px;
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
 }
 
 .footer__author {
+  flex: 0 0 14.7%;
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
@@ -42,7 +43,12 @@
   }
 
   .footer__author {
+    flex: 0 0 19.3%;
     opacity: 0.5;
+  }
+
+  .footer__letter {
+    display: none;
   }
 }
 

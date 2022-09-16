@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 71px;
 }
 
 .callback__container {
@@ -13,9 +13,10 @@
 }
 
 .callback__title {
+  width: 98%;
   font-weight: 700;
   font-size: 35px;
-  line-height: 41px;
+  line-height: 40px;
   margin-bottom: 17px;
 }
 
@@ -23,26 +24,26 @@
   font-weight: 500;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .form__data {
   display: flex;
   flex-direction: column;
-  row-gap: 21px;
-  margin-bottom: 50px;
+  row-gap: 19px;
+  margin-bottom: 49px;
 }
 
 .form__input {
-  width: 423px;
-  height: 44px;
+  width: 425px;
+  height: 46px;
   background-color: transparent;
-  border-width: 1.38235px;
+  border-width: 2px;
   border-style: solid;
   border-color: #fff;
   border-radius: 50px;
   outline: none;
-  padding: 0 25px;
+  padding: 0 25px 3px;
 }
 
 .form__input::placeholder {
@@ -54,21 +55,20 @@
   height: 48px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 23px;
   color: inherit;
   background-color: #15a9cb;
   box-shadow: 0 4px 25px rgba(21, 169, 203, 0.3);
   border-radius: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .agreement {
   font-size: 20px;
-  line-height: 23px;
 }
 
 .agreement__text {
   display: inline-block;
+  line-height: 21px;
 }
 
 .agreement__label {
@@ -85,8 +85,11 @@
 }
 
 .agreement__check {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 21px;
   color: #4a76a8;
-  border-bottom: 2px solid #4a76a8;
+  border-bottom: 1px solid #4a76a8;
   cursor: pointer;
 }
 
@@ -106,25 +109,28 @@
   }
 
   .callback__title {
+    width: 93vw;
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 16px;
   }
 
   .callback__subtitle {
+    width: 96vw;
     font-size: 20px;
     line-height: 23px;
+    margin-bottom: 48px;
   }
 
   .form__data {
-    row-gap: 20px;
+    row-gap: 19px;
   }
 
   .form__input {
     width: 377px;
-    height: 39px;
+    height: 40px;
     border-width: 2px;
-    padding: 0 23px;
+    padding: 0 20px;
   }
 
   .form__input::placeholder {
@@ -132,11 +138,15 @@
   }
 
   .form__btn {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .agreement {
     font-size: 17px;
+    line-height: 20px;
+  }
+
+  .agreement__check {
     line-height: 20px;
   }
 }
@@ -159,30 +169,32 @@
 @media (max-width: 480px) {
 
   .callback {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-bottom: 29px;
   }
 
   .callback__title {
+    width: 90vw;
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .callback__subtitle {
+    width: 90vw;
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 35px;
   }
 
   .form__data {
-    row-gap: 15px;
+    row-gap: 14px;
     margin-bottom: 45px;
   }
 
   .form__input {
     width: 100%;
-    height: 28px;
+    height: 29px;
     border-width: 1px;
     padding: 0 18px 6px;
   }
@@ -196,7 +208,8 @@
     height: 38px;
     font-size: 16px;
     line-height: 19px;
-    box-shadow: 0 2.69725px 16.8578px rgba(21, 169, 203, 0.3);
+    box-shadow: 0 2.67px 16.86px rgba(21, 169, 203, 0.3);
+    margin-bottom: 30px;
   }
 
   .agreement {
@@ -206,5 +219,10 @@
 
   .agreement__text {
     display: inline;
+    line-height: 12px;
+  }
+
+  .agreement__check {
+    line-height: 12px;
   }
 }

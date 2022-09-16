@@ -1,20 +1,30 @@
 
 .present {
+  position: relative;
   background-image: url("../img/section_present/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 224px;
+  padding-top: 227px;
   padding-bottom: 120px;
 }
 
-.present__container {
-  text-align: center;
+.present:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 50, 75, 0.85);
 }
 
 .present__body {
+  position: relative;
+  z-index: 4;
   max-width: 990px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main__title {
@@ -22,13 +32,13 @@
   font-size: 52px;
   line-height: 61px;
   color: rgba(255, 255, 255, 0.86);
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .main__desc {
   line-height: 31px;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 90px;
+  margin-bottom: 88px;
 }
 
 .main__desc_small {
@@ -68,7 +78,7 @@
   .main__desc {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
   }
 
   .present__link {
@@ -77,10 +87,6 @@
 }
 
 @media (max-width: 768px) {
-
-  .present {
-    background-position: left 15% center;
-  }
 
   .present__body {
     max-width: 530px;
@@ -105,6 +111,7 @@
 @media (max-width: 480px) {
 
   .present {
+    background-position: left 13% center;
     padding: 110px 0 65px;
   }
 
@@ -115,13 +122,13 @@
   .main__title {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   .main__desc_small {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .present__link {
